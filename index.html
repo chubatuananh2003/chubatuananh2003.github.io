@@ -4,15 +4,16 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Music Player</title>
     <link rel="icon" type="image/png" sizes="16x16"  href="/favicons/favicon-16x16.png">
     <meta name="msapplication-TileColor" content="#ffffff">
     <meta name="theme-color" content="#ffffff">
-    <title>Music Player</title>
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css" integrity="sha512-HK5fgLBL+xu6dm/Ii3z4xhlSUyZgTT9tuc/hSrtw6uzJOvgRr2a9jyxxT1ely+B+xFAmJKVSTbpM/CuL7qxO8w==" crossorigin="anonymous" />
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
 </head>
+
 <body>
     <div class="player">
         <!-- Dashboard -->
@@ -47,11 +48,15 @@
             <audio id="audio" src=""></audio>
         </div>
 
+
+
         <!-- playlist -->
         <div class="playlist">
             
         </div>
     </div>
+
+
 
     <script>
         const $ = document.querySelector.bind(document)
@@ -72,6 +77,7 @@
             const randomBtn = $('.btn-random')
             const repeatBtn = $('.btn-repeat')
             const playlist = $('.playlist')
+
 
         const app = {
             currentIndex: 0,
@@ -140,7 +146,67 @@
                     singer: 'Alan Walker',
                     path: './music/song10.mp3',
                     image: './img/photo10.webp'
-                }
+                },
+                {
+                    name: 'Chưa Bao Giờ Em Quên',
+                    singer: 'Hương Ly',
+                    path: './music/Chưa Bao Giờ Em Quên - Hương Ly - Bài hát, lyrics.mp3',
+                    image: './img/chưa bao giờ em quên.webp'
+                },
+                {
+                    name: 'Cưa Là Đổ',
+                    singer: 'Phát Hồ, X2X',
+                    path: './music/Cưa Là Đổ - Phát Hồ, X2X - Bài hát, lyrics.mp3',
+                    image: './img/cưa là đổ.webp'
+                },
+                {
+                    name: 'Đau Ở Đây Này',
+                    singer: 'Nal',
+                    path: './music/Đau Ở Đây Này - Nal - Bài hát, lyrics.mp3',
+                    image: './img/đau ở đây này.webp'
+                },
+                {
+                    name: 'Freaky Squad',
+                    singer: 'Nhiều nghệ sĩ',
+                    path: './music/Freaky Squad - Nhiều nghệ sĩ - Bài hát, lyrics.mp3',
+                    image: './img/freaky squad.webp'
+                },
+                {
+                    name: 'Không Bằng',
+                    singer: 'Rin Music Remix',
+                    path: './music/Không Bằng (Rin Music Remix) - Na - Bài hát, lyrics.mp3',
+                    image: './img/không bằng.webp'
+                },
+                {
+                    name: 'Sông Có Khúc Người Có Lúc',
+                    singer: 'Mr.Siro',
+                    path: './music/Sông Có Khúc Người Có Lúc - Mr. Siro - Bài hát, lyrics.mp3',
+                    image: './img/thay lòng.webp'
+                },
+                {
+                    name: 'Thay Lòng',
+                    singer: 'DIMZ, TVk, NH4T',
+                    path: './music/Thay Lòng - DIMZ, TVk, NH4T - Bài hát, lyrics.mp3',
+                    image: './img/thay lòng.webp'
+                },
+                {
+                    name: 'Thì Thôi',
+                    singer: 'TVk, Nal, 93NEW-G',
+                    path: './music/Thì Thôi - TVk, Nal, 93NEW-G - Bài hát, lyrics.mp3',
+                    image: './img/thì thôi.webp'
+                },
+                {
+                    name: 'Yêu Là Cưới',
+                    singer: 'Phát Hồ, X2X',
+                    path: './music/Yêu Là Cưới - Phát Hồ, X2X - Bài hát, lyrics.mp3',
+                    image: './img/yêu là cưới.webp'
+                },
+                {
+                    name: 'Là Ai Từ Bỏ, Là Ai Vô Tình',
+                    singer: 'Hương Ky, Jombie',
+                    path: './music/Là Ai Từ Bỏ, Là Ai Vô Tình - Hương Ly, Jombie - Bài hát, lyrics.mp3',
+                    image: './img/là ai từ bỏ, là ai vô tình.webp'
+                },
             ],
 
             setConfig: function(key, value) {
@@ -364,7 +430,6 @@
         app.start()
         
     </script>
-    
-    
+
 </body>
 </html>
